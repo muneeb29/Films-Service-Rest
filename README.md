@@ -1,8 +1,5 @@
-# Enterprise Programming 
+# Rest Web Service 
 Created By Muneeb Khalid 
-
--REST Web Service 
-
 
 #Setting Up 
 The default port used is 8080
