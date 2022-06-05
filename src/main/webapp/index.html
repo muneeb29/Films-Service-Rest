@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/styles.css" rel="stylesheet">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./scripts/ajax.js" type="text/javascript"></script>
+<script src="./scripts/script.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<title>Films</title>
+</head>
+
+<body>
+
+
+	<h1 class="top">Films</h1>
+
+	<input type="button" value="XML Table" class="xmlBt">
+	<input type="button" value="JSON Table" class="jsonBt">
+	<input type="button" value="Text Table" class="txtBt">
+	
+	<div class="action-buttons" id="action-buttons">
+		<input type="button" value="Insert" class="insert" onclick="openForm()">
+		<input type="button" value="Update" class="update" onclick="openupForm()">
+	</div>
+
+
+
+	<div class="search" id="search">
+		<input type="text" placeholder="Search By Title:" id="searchName" name="searchTitle"> 
+		<input type="button" class="searchBt" value="Clear" onclick="clearSearch()">
+	</div>
+
+	<br><br/>
+	
+	<h3>Delete Films</h3>
+
+		<input type="text" name="id" id="deleteFilm" placeholder="Enter ID:">
+		<input type="button" value="Delete XML" class="bt" id="deleteBtXml" name="deleteBut">
+		<input type="button" value="Delete JSON" class="bt" id="deleteBtJson" name="deleteBut">
+		<input type="button" value="Delete Text" class="bt" id="deleteBtTxt" name="deleteBut">
+
+	<h2 id="deleteFilmMes"></h2>
+
+	<br><br/>
+
+	<div class="insertFilm" id="insertFilm">
+		<input type="text" placeholder="ID:" name="idIn" id="insertID">
+		<input type="text" placeholder="Title:" name="titleIn" id="insertTitle">
+	    <input type="text"placeholder="Year:" name="yearIn" id="insertYear"> 
+	    <br><br/> 
+		<input type="text" placeholder="Director:" name="directorIn" id="insertDirector"> 
+		<input type="text" placeholder="Stars:" name="starsIn" id="insertStars"> 
+		<input type="text" placeholder="Review:" name="reviewIn" id="insertReview">
+			 
+		<input type="button" value="Insert XML" class="bt" id="insertBtXml"> 
+		<input type="button" value="Insert JSON" class="bt" id="insertBtJson">
+		<input type="button" value="Insert Text" class="bt" id="insertBtTxt">
+		<br><br/>	
+		<input type="button" value="Close" class="closeinsert" onclick="closeForm()">
+	</div>
+
+	<h2 id="insertFilmMes"></h2>
+
+	<br><br/>
+
+	<div class="updateFilm" id="updateFilm">
+		    <input type="text" placeholder="ID:" name="upID" id="updateID">
+		    <input type="text" placeholder="Title:" name="upTitle" id="updateTitle"> 
+			<input type="text" placeholder="Year:"name="upYear" id="updateYear">
+			 <br><br/> 
+			<input type="text" placeholder="Director:" name="upDirector" id="updateDirector"> 
+			<input type="text" placeholder="Stars:" name="upStars" id="updateStars"> 
+			<input type="text" placeholder="Review:" name="upReview" id="updateReview"> 
+			<input type="button" value="Update XML" class="bt" id="updateBtXml"> 
+			<input type="button" value="Update JSON" class="bt" id="updateBtJson"> 
+			<input type="button" value="Update Text" class="bt" id="updateBtTxt"> 
+			<br><br/>
+			<input type="button" value="Close" class="closeupdate"onclick="closeupForm()">
+	</div>
+	<h2 id="updateFilmMes"></h2>
+
+	<br>
+	<br />
+
+	<table id="myTable">
+		<tr>
+			<th>ID</th>
+			<th>Title</th>
+			<th>Year</th>
+			<th>Director</th>
+			<th>Stars</th>
+			<th>Review</th>
+		</tr>
+	</table>
+
+	<div id="get-film-txt"></div>
+</body>
+</html>

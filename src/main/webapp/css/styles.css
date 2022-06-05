@@ -1,0 +1,135 @@
+.top {
+	overflow: hidden;
+	padding: 10px;
+	font-family: arial, sans-serif;
+	font-size: 76px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: white;
+	background-color: #4d88e1;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+
+body {
+	background-color: #DDDDDD;
+}
+
+th {
+	background-color: #4d88e1;
+	color: white;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+
+	color: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+}
+
+td {
+	background-color: #3294ff;
+}
+
+.insertFilmMes{
+	padding:3px;
+}
+
+.insertFilm, .updateFilm {
+	display: none;
+	border: 3px solid #f1f1f1;
+	max-width: 500px;
+	padding: 20px;
+	background-color: white;
+}
+
+.insertFilm input[type=text], .updateFilm input[type=text] {
+	width: 90%;
+	padding: 15px;
+	margin: 5px 0 18px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+.insertFilm .insertBt, .closeinsert, .updateFilm .updateBt, .closeupdate
+	{
+	background-color: #4d88e1;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+.action-buttons {
+	margin-left: 490px;
+	margin-right: 2px;
+	color: #27b739;
+	text-align: center;
+
+
+}
+
+.xmlBt, .jsonBt, .txtBt, .searchBt, .insert, .update, .deleteBt  {
+  background-color: #4d88e1; 
+  color: white;
+	border-radius: 8px;
+	padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.bt  {
+  background-color: #4d88e1; 
+  color: white;
+	border-radius: 8px;
+	padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.Type{
+  background-color: #4d88e1; 
+  color: white;
+	border-radius: 8px;
+	padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type=text] {
+  padding: 0;
+  height: 30px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+}
