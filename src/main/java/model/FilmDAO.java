@@ -10,10 +10,11 @@ public class FilmDAO {
 	Film oneFilm = null;
 	Connection conn = null;
 	Statement stmt = null;
-	String user = "khalidmu";
-	String password = "nerscouL3";
+
+	//Connection username and password require adding
+	String user ="";
 	// Note none default port used, 6306 not 3306
-	String url = "jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/" + user;
+	String url = "jdbc:mysql:" + user;
 
 	public FilmDAO() {
 	}
